@@ -1300,3 +1300,7 @@ section.inner-bnr .hero-text h2 {
 .main-text {
     padding-top: 20px;
 }
+
+.home_explore.pt-4 {
+    text-align: center;
+}
