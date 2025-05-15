@@ -1,4 +1,8 @@
  @media(max-width:1200px) {
+   html {
+     font-size: 15px;
+   }
+
    .px-5 {
      padding-inline: 2rem;
    }
@@ -105,19 +109,28 @@
      width: 100%;
    }
 
-       .zeuzie-listings {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .listing {
-    width: 100%;
-
+   .zeuzie-listings {
+     flex-direction: column;
+     align-items: center;
+   }
+.slide_content p {
+    font-size: 1.1rem;
 }
+   .listing {
+     width: 100%;
 
+   }
+.slide_content h2 {
+    font-size: 2rem;
+}
  }
 
  @media (max-width: 767px) {
+
+   html {
+     font-size: 14px;
+   }
+
    .image-box.img {
      margin-bottom: 20px;
    }
@@ -133,6 +146,10 @@
    .banner {
      margin-bottom: 2rem;
      height: 450px;
+   }
+
+   .slide_content p {
+     font-size: 1.3rem;
    }
 
    .page-heading {
@@ -154,10 +171,7 @@
 
    }
 
-   .header_logoLink {
-     width: 80px;
-     height: 90px;
-   }
+
 
    .pb-10 {
      margin-bottom: 3rem;
@@ -204,7 +218,26 @@
      padding: 24px;
    }
 
-  
+   .slick-prev,
+   .slick-next {
+     top: auto;
+     bottom: -40px;
+     transform: none;
+   }
+
+   .slick-prev {
+     left: 50% !important;
+     margin-left: -40px;
+   }
+
+   .slick-next {
+     right: 50% !important;
+     margin-right: -40px;
+   }
+
+   .single-item-slider {
+     width: 100%;
+   }
 
  }
 
@@ -222,18 +255,29 @@
      font-size: 28px;
    }
 
+   .slide_content p {
+     font-size: 1.3rem;
+   }
+
    .banner--homepage {
      height: 65vh;
+   }
+.slide_content h2 {
+    font-size: 2rem;
+}
+   .slide_content p {
+     font-size: 1rem;
    }
 
    .banner--homepage .banner_contnet h2 {
      margin-top: 1.25rem;
    }
-.button {
-    display: inline-block;
-    padding: 10px;
-    font-size: 13px;
-}
+
+   .button {
+     display: inline-block;
+     padding: 10px;
+     font-size: 13px;
+   }
  }
 
 
@@ -242,7 +286,9 @@
    .content-column .inner-column {
      padding: 20px;
    }
-
+.slide_content h2 {
+    font-size: 1.7rem;
+}
    .hotels-inner-card.second .content-column .inner-column {
      padding: 20px;
    }
@@ -254,6 +300,10 @@
    .banner_contnet h2 {
      margin-bottom: 0;
    }
+   .banner_contnet h2 {
+    font-size: 1.5rem;
+}
+   
  }
 
  @media(max-width:375px) {
