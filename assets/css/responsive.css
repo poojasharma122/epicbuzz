@@ -191,7 +191,7 @@
    }
 
    .humburger {
-     display: flex;
+     display: block;
 
    }
 

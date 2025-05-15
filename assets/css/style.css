@@ -174,7 +174,7 @@ li {
     z-index: 88888;
     width: 3rem;
     height: 3rem;
-    background-color: #aa8453;
+    /* background-color: #aa8453; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -214,7 +214,7 @@ li {
     align-items: center;
     text-align: center;
     position: relative;
-    margin-bottom: 120px;
+    margin-bottom: 80px;
     height: 550px;
 }
 
@@ -281,6 +281,29 @@ li {
     /* Tomato color */
 }
 
+.toggle-menu .main-aside {
+    transform: translateX(0);
+}
+.humburger .bar-1, .bar-2, .bar-3 {
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    margin: 8px 0;
+    transition: all 0.3s linear;
+    display: block;
+}
+
+.toggle-menu .humburger .bar-1 {
+    transform: rotate(45deg) translateY(14px);
+}
+
+.toggle-menu .humburger .bar-2 {
+    opacity: 0;
+}
+
+.toggle-menu .humburger .bar-3 {
+    transform: rotate(-45deg) translateY(-15px);
+}
 /* adventure type section end  */
 
 .adventure-heading {
@@ -1027,3 +1050,142 @@ section.inner-bnr .hero-text h2 {
 /* read more zeuzie css end */
 
 /* blog page css end */
+
+
+
+/* contact page css start */
+.inner-bnr-cst {
+    background: rebeccapurple;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    position: relative;
+    z-index: 1;
+}
+
+.inner-bnr-cst::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000099;
+    z-index: -1;
+}
+
+.bnr-content-heading h2 {
+    margin-bottom: 20px;
+    font-family: "Gilda-display";
+    font-size: 54px;
+    text-transform: uppercase;
+    line-height: 115%;
+    color: #fff;
+    font-weight: 700;
+}
+
+.bnr-content-heading {
+    text-align: center;
+}
+
+.social-links a {
+    background-color: #3e9172;
+    color: #000;
+    margin: 0 5px;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s all ease-in-out;
+    padding: 8px;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+    box-shadow: #fff 0px 3px 10px;
+}
+
+.social-links a svg {
+    fill: #fff;
+    height: 100%;
+    width: 100%;
+}
+
+.inquiries .inquiries-content h5,
+.directly-contact h5,
+.directly h5 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.inquiries-content p a {
+    color: #3e9172;
+}
+
+.collaborations-inner-text a {
+    display: block;
+    color: #3e9172;
+    padding-bottom: 10px;
+}
+
+.directly {
+    padding: 20px;
+}
+
+.inquiries-content {
+    padding: 20px;
+}
+
+.inquiries-content ul {
+    padding: 0;
+}
+
+.inquiries-content ul li {
+    color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 10px;
+}
+
+.collaborations-content {
+    padding: 20px;
+}
+
+.collaborations-inner-text h5 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.directly {
+    padding: 20px;
+}
+
+.form-wrapper {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+
+.input-wrapper input,
+.input-wrapper textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    resize: none;
+}
+
+.input-wrapper {
+    margin-bottom: 16px;
+}
+
+/* contact page css end */
