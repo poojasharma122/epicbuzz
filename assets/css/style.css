@@ -1056,7 +1056,7 @@ section.inner-bnr .hero-text h2 {
 /* contact page css start */
 .inner-bnr-cst {
     background: rebeccapurple;
-    height: 400px;
+    height: 550px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1189,6 +1189,9 @@ section.inner-bnr .hero-text h2 {
 }
 
 /* contact page css end */
+
+
+
 
 
 /* privacy policy css start */
