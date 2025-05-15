@@ -1022,8 +1022,10 @@ section.inner-bnr .hero-text h2 {
 }
 
 .listing h3 {
-    margin: 0.5rem 0;
+    margin: 1rem 0 0 0;
     color: #000;
+    font-size: 22px;
+    line-height: 26px;
 }
 
 .listing p {
