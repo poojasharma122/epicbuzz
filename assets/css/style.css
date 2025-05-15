@@ -926,6 +926,10 @@ section.inner-bnr .hero-text h2 {
     color: #555;
 }
 
+.card-body {
+    display: block;
+}
+
 .buzz-blog-heading {
     text-align: center;
     padding-bottom: 20px;
@@ -942,3 +946,84 @@ section.inner-bnr .hero-text h2 {
 
 /* snowsports page css end */
 
+
+
+/* blog page css start */
+
+
+/* read more zeuzie css start */
+
+
+.read-more-heading h2 {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.zeuzie-listings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.listing {
+    /* flex: 1 1 30%; */
+    width: 49%;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 20px;
+}
+
+.listing img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.listing h3 {
+    margin: 0.5rem 0;
+    color: #000;
+}
+
+.listing p {
+    color: #555;
+}
+
+.listing a {
+    text-decoration: none;
+}
+
+.listing a:hover h3 {
+    text-decoration: underline;
+    color: #3e9172;
+}
+
+.read-more-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s all ease-in-out;
+}
+
+.read-more-main {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.read-more-img:hover {
+    transform: scale(1.2);
+}
+
+/* read more zeuzie css end */
+
+/* blog page css end */

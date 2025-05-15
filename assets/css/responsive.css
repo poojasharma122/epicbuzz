@@ -105,6 +105,16 @@
      width: 100%;
    }
 
+       .zeuzie-listings {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .listing {
+    width: 100%;
+
+}
+
  }
 
  @media (max-width: 767px) {
@@ -193,6 +203,8 @@
    .main-aside {
      padding: 24px;
    }
+
+  
 
  }
 
