@@ -1304,3 +1304,44 @@ section.inner-bnr .hero-text h2 {
 .home_explore.pt-4 {
     text-align: center;
 }
+
+
+
+/* Editor Choice CSS Start */
+.home_tips_cards {
+    display: block;
+    background-color: #1c1c1a;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.home_tips_cards:hover .home_tips_cards_img_inner {
+    transform: scale(1.1);
+}
+
+.home_tips_cards_img {
+    height: 20rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.home_tips_cards_img_inner {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s all ease-in-out;
+}
+
+.home_cards-content {
+    padding: 0.875rem 0.9375rem;
+}
+
+.home_cards-content p {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* Editor Choice CSS End */
