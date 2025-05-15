@@ -1259,6 +1259,7 @@ section.inner-bnr .hero-text h2 {
   width: 100%;
   height: 500px;
   border-radius: 20px;
+  padding-bottom: 20px;
 }
 
 .main-blog-page-content p {
@@ -1292,4 +1293,8 @@ section.inner-bnr .hero-text h2 {
     font-size: 20px;
     color: #fff;
     line-height: 30px;
+}
+
+.main-text {
+    padding-top: 20px;
 }
