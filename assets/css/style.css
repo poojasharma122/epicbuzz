@@ -1,0 +1,944 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #222222;
+}
+
+:root {
+    --primary-color: #5d5d53;
+    /* --secondary-color: */
+    --black-color: #000000;
+    --white-color: #ffffff;
+    /* font family */
+    --primary-font: "Barlow";
+    --secondry-font: "Gilda-display";
+}
+
+.pt-80 {
+    padding-top: 80px;
+}
+
+.pb-80 {
+    padding-bottom: 80px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+span {
+    color: #3e9172;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 1rem;
+}
+
+
+li {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1272px;
+    width: 100%;
+    margin: 0 auto;
+    padding-inline: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 32px;
+    font-size: 16px;
+    font-weight: 400;
+    background: #ab8a62;
+    line-height: normal;
+    border: 1px solid transparent;
+    outline: none;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #3b3b3b;
+}
+
+.main-aside {
+    float: left;
+    width: 20%;
+    padding: 24px 0 60px 0;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    /* overflow-x: hidden; */
+    z-index: 1001;
+    background: #1b1b1b;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    scrollbar-width: none;
+}
+
+.main-aside ul {
+    padding: 0;
+}
+
+.main-sec {
+    width: 80%;
+    float: right;
+}
+
+.pb-12 {
+    padding-bottom: 120px;
+}
+
+.px-5 {
+    padding-inline: 3rem;
+}
+
+.page-heading {
+    font-size: 46px;
+    font-family: var(--secondry-font);
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.25em;
+    margin-bottom: 1.4rem;
+}
+
+
+/* header section start */
+.header_item {
+    padding: 0 0 11px 0;
+}
+
+.header_link {
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.25em;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 11px 0 0 0;
+    list-style: none;
+    display: inline-block;
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+
+.header_link::after {
+    width: 0%;
+    position: absolute;
+    content: "";
+    bottom: -6px;
+    right: 0;
+    background-color: #3e9172;
+    height: 2px;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+.header_link.active::after {
+    width: 100%;
+    left: 0;
+}
+
+.header_link:hover,
+.header_link.active {
+    color: #3e9172;
+}
+
+.humburger {
+    position: absolute;
+    top: 24px;
+    right: -70px;
+    z-index: 88888;
+    width: 3rem;
+    height: 3rem;
+    background-color: #aa8453;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    display: none;
+
+}
+
+.humburger svg {
+    vertical-align: middle;
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: #fff;
+}
+
+.humburger i {
+    color: white;
+    font-size: 1.6rem;
+}
+
+.ri-menu-line:before {
+    content: "\ef3e";
+}
+
+/* header section end */
+
+
+/* banner sectuion start */
+.banner {
+    background-image: url("../images/home-banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 120px;
+    height: 550px;
+}
+
+.banner--homepage {
+    height: 100vh;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0 0 0 / 50%);
+    z-index: 1;
+}
+
+.banner_wrapper {
+    position: relative;
+    z-index: 2;
+    max-width: 90%;
+    margin-inline: auto;
+}
+
+.banner_contnet h2 {
+    margin-bottom: 20px;
+    font-family: "Gilda-display";
+    font-size: 54px;
+    text-transform: uppercase;
+    line-height: 115%;
+    color: #fff;
+    font-weight: 700;
+}
+
+.banner_contnet h1 {
+    margin-bottom: 1rem;
+    font-family: "Gilda-display";
+    font-size: 58px;
+    text-transform: uppercase;
+    line-height: 140%;
+    color: #fff;
+    font-weight: bold;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #3e9172;
+    /* Coral color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #000;
+    /* Tomato color */
+}
+
+/* adventure type section end  */
+
+.adventure-heading {
+    text-align: center;
+}
+
+.adventure-heading h2 {
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+    line-height: 100%;
+    padding-bottom: 10px;
+}
+
+.single-item-slider {
+    width: calc(100% - 150px);
+    margin: 0 auto;
+}
+
+.banner_slides {
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0 0 0/60%);
+    background-blend-mode: multiply;
+}
+
+.slick-prev:before {
+    content: '←';
+    color: #3e9172;
+}
+
+.slick-next:before {
+    content: '→';
+    color: #3e9172;
+}
+
+.slide_content {
+    text-align: center;
+    padding: 0 15px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 35px;
+    opacity: 1;
+}
+
+.slide_content h2 {
+    color: #3e9172;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.slide_content p {
+    font-size: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.slick-prev {
+    left: -45px !important;
+}
+
+.slick-next {
+    right: -35px !important;
+}
+
+/* adventure type section css end  */
+
+
+
+
+/* resort of the month css start */
+
+.resort-content {
+    padding: 68px 0;
+}
+
+.resort-month-heading h2 {
+    font-size: 32px;
+    color: #fff;
+    line-height: 100%;
+    padding-bottom: 10px;
+}
+
+.resort-month-heading {
+    text-align: center;
+}
+
+.resort-image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 380px;
+}
+
+/* resort of the month css end */
+
+
+/* why choose epicbuzz section css start */
+
+.why-choose-heading {
+    text-align: center;
+}
+
+.why-choose-heading h2 {
+    font-size: 32px;
+    color: #fff;
+    line-height: 100%;
+    padding-bottom: 10px;
+}
+
+.choose-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+}
+
+.why-choose-content {
+    border: 1px solid white;
+    padding: 10px;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.why-choose-content p {
+    margin-bottom: 0;
+}
+
+/* why choose epicbuzz section css end */
+
+
+
+
+/* Join the Buzz Club css start */
+
+.subscribe-wrapper {
+    background-color: #202124;
+    text-align: center;
+}
+
+.subscribe-wrapper h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.subscribe-wrapper p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.email-input {
+    padding: 12px;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+.subscribe-btn button {
+    text-align: center;
+    color: #fff;
+    outline: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border: none;
+    background-color: #3e9172;
+    display: inline-block;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.subscribe-btn button:hover {
+    background-color: #000;
+}
+
+/* Join the Buzz Club css end */
+
+
+
+
+/* Footer CSS Start */
+.footer {
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: #4b645b 0px 3px 15px;
+}
+
+.footer .footer-logos {
+    margin-bottom: 2.8125rem;
+}
+
+.footer .footer-logo {
+    padding-bottom: 0.9375rem;
+}
+
+.footer .footer-logo img {
+    width: 11.25rem;
+}
+
+.footer .footer-links {
+    padding-top: 1rem;
+}
+
+.footer .footer-links a {
+    padding: 0 7px;
+    font-size: 1.125rem;
+    color: #fff;
+    display: inline-block;
+}
+
+.footer .footer-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+
+}
+
+.footer .footer-links ul li {
+    padding: 0 15px 5px 0;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.footer .footer-links ul li:last-child {
+    padding-right: 0;
+}
+
+.logo-bottom a {
+    color: #fff;
+    font-size: 1.875rem;
+}
+
+.footer a:hover {
+    color: #3e9172;
+}
+
+.footer a i {
+    font-size: 0.75rem;
+    padding-right: 0.625rem;
+}
+
+.footer .copyright .logo {
+    width: 6.875rem;
+}
+
+.footer .copyright p {
+    padding-bottom: 1.25rem;
+}
+
+.footer .copyright p:last-child {
+    padding-bottom: 0;
+}
+
+.copyright-text p {
+    color: #fff;
+}
+
+.after-footer {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0.9375rem 0 0.9375rem;
+    color: #000;
+    font-size: 0.9375rem;
+}
+
+.after-footer p {
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 0.9375rem;
+}
+
+.after-footer .before-footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ssl-certi-inner {
+    height: 3.75rem;
+    width: 18.75rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
+.after-footer .col-12 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    font-size: 0.9375rem;
+}
+
+.after-footer .col-12 a {
+    color: #000
+}
+
+.after-footer .col-12 a:hover {
+    color: #afbff9;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+}
+
+.after-footer .col-12 .social-links a {
+    background-color: #3e9172;
+    color: #000;
+    margin: 0 5px;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s all ease-in-out;
+    padding: 8px;
+}
+
+.after-footer .col-12 .social-links a svg {
+    fill: #fff;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.after-footer .col-12 .social-links a:hover {
+    transform: translateY(-3px);
+    box-shadow: #fff 0px 3px 10px;
+}
+
+
+
+.social-links a i {
+    font-size: 1.25rem;
+    padding-right: 0.4375rem;
+    padding-left: 0.4375rem;
+}
+
+.disclaimer_txt {
+    border-top: 1px solid #3e9172;
+    border-bottom: 1px solid #3e9172;
+}
+
+.disclaimer_txt h3 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #3e9172;
+}
+
+/* Footer CSS End */
+
+
+
+/* --------------------------------------------------------------------- */
+/* snowsports page css start */
+
+
+
+
+/* why book css start */
+
+.why-book-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 320px;
+}
+
+.why-book-heading {
+    text-align: center;
+}
+
+.why-book-heading h2 {
+    color: #fff;
+    padding: 20px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.why-book-after {
+    padding: 30px 0;
+}
+
+/* why book css end */
+
+
+
+/* feature hotel css start */
+
+.featured-hotel-heading {
+    text-align: center;
+}
+
+.featured-hotel-heading h2 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 100%;
+    padding-bottom: 20px;
+}
+
+section.inner-bnr {
+    height: 500px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: none;
+    position: relative;
+    z-index: 1;
+}
+
+.image-box.img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+section.inner-bnr::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #000000ba;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+section.inner-bnr .hero-text {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+section.inner-bnr .hero-text h2 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.image-column .inner-column {
+    margin-right: -170px;
+    position: relative;
+    z-index: 9;
+}
+
+.content-column .inner-column {
+    position: relative;
+    background-color: #fbf5ed;
+    padding: 45px 10px 45px 200px;
+    margin-top: 50px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.hotels-inner-card {
+    margin-bottom: 60px;
+}
+
+.hotels-content-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hotels-content-heading h4 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.hotels-inner-card.second .image-column .inner-column {
+    margin-right: 0;
+    margin-left: -170px;
+}
+
+.hotels-inner-card.second .content-column .inner-column {
+    padding: 45px 200px 45px 20px;
+}
+
+
+.rate span {
+    color: #3e9172;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.sec-title p {
+    color: #000;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.hotels-content-heading h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    color: #fff;
+}
+
+.sec-title a h4 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #000;
+    line-height: 40px;
+    transition: color 0.3s;
+}
+
+.sec-title a h4:hover {
+    color: #000;
+    transition: color 0.3s;
+}
+
+/* feature hotel css end */
+
+
+
+/* canada best winter css start */
+.canada-winter-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 320px;
+    border-radius: 10px;
+}
+
+.canada-winter-content h3 {
+    color: #fff;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 40px;
+    margin-top: 20px;
+}
+
+/* canada best winter css end */
+
+
+
+/* booking tips canada css start */
+
+.booking-tips-heading {
+    text-align: center;
+}
+
+.booking-tips-heading h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.booking-tips-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 320px;
+    border-radius: 10px;
+}
+
+.booking-tips-img.second {
+    width: 100%;
+    height: 345px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.booking-content {
+    padding: 34px 0;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+}
+
+/* booking tips canada css start */
+
+/* buzz blog css start */
+
+.card {
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title i {
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.buzz-blog-heading {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.buzz-blog-heading h2 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+/* buzz blog css end */
+
+/* snowsports page css end */
+

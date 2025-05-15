@@ -1,0 +1,248 @@
+ @media(max-width:1200px) {
+   .px-5 {
+     padding-inline: 2rem;
+   }
+
+   .banner--homepage {
+     height: 85vh;
+   }
+
+   .banner_contnet h2 {
+     margin-bottom: 1rem;
+     font-size: 3rem;
+   }
+
+   .main-aside {
+     width: 30%;
+   }
+
+   .main-sec {
+     width: 70%;
+   }
+ }
+
+ @media(max-width:1024px) {
+   .banner {
+     margin-bottom: 3.5rem;
+     height: 480px;
+   }
+
+   .banner--homepage {
+     height: 80vh;
+   }
+
+   .info {
+     margin-bottom: 4rem;
+   }
+
+   .px-5 {
+     padding-inline: 2rem;
+   }
+
+   .page-heading {
+     font-size: 38px;
+   }
+
+   .pb-10 {
+     margin-bottom: 5rem;
+   }
+
+   .banner_contnet h2 {
+     font-size: 2.5rem;
+   }
+ }
+
+ @media(max-width:991px) {
+
+   .image-column .inner-column {
+     margin-right: 0;
+
+   }
+
+   .content-column .inner-column {
+     padding: 61px 60px 61px 60px;
+     margin-top: 0;
+   }
+
+   .hotels-inner-card.second .row {
+     flex-direction: column-reverse;
+   }
+
+   .hotels-inner-card.second .image-column .inner-column {
+     margin-right: 0;
+     margin-left: 0;
+   }
+
+   .hotels-inner-card.second .content-column .inner-column {
+     padding: 61px 60px 61px 60px;
+   }
+
+   .image-box.img {
+     margin-bottom: 20px;
+   }
+
+   .page-heading {
+     font-size: 36px;
+   }
+
+   .banner_contnet h2 {
+     font-size: 2.1rem;
+   }
+
+   .banner--homepage {
+     height: 75vh;
+   }
+
+   .px-5 {
+     padding-inline: 1rem;
+   }
+
+   .info_right {
+     padding: 1rem;
+   }
+
+   .info_left {
+     width: 100%;
+   }
+
+ }
+
+ @media (max-width: 767px) {
+   .image-box.img {
+     margin-bottom: 20px;
+   }
+
+   .hotels-inner-card.second .content-column .inner-column {
+     padding: 40px 40px 40px 40px;
+   }
+
+   .content-column .inner-column {
+     padding: 40px 40px 40px 40px;
+   }
+
+   .banner {
+     margin-bottom: 2rem;
+     height: 450px;
+   }
+
+   .page-heading {
+     font-size: 2rem;
+   }
+
+   .info {
+     margin-bottom: 3rem;
+   }
+
+   .banner--homepage {
+
+     height: 70vh;
+   }
+
+   .main-aside {
+
+     padding: 24px;
+
+   }
+
+   .header_logoLink {
+     width: 80px;
+     height: 90px;
+   }
+
+   .pb-10 {
+     margin-bottom: 3rem;
+   }
+
+   .px-5 {
+     padding-inline: 0rem;
+   }
+
+   .main-sec {
+     width: 100%;
+   }
+
+   .banner_contnet h2 {
+     font-size: 2rem;
+   }
+
+   .main-aside {
+     transform: translateX(-100%);
+     width: 270px;
+     z-index: 999;
+     position: fixed;
+   }
+
+   .main-aside.active {
+     transform: translateX(0%);
+   }
+
+   .banner_wrapper {
+     max-width: 100%;
+   }
+
+   .humburger {
+     display: flex;
+
+   }
+
+   .categories_innerSec {
+     width: 100%;
+     margin-bottom: 0.5rem;
+   }
+
+   .main-aside {
+     padding: 24px;
+   }
+
+ }
+
+
+ @media(max-width:575px) {
+   s .banner_contnet h2 {
+     font-size: 2rem;
+   }
+
+   .info {
+     margin-bottom: 2.5rem;
+   }
+
+   .page-heading {
+     font-size: 28px;
+   }
+
+   .banner--homepage {
+     height: 65vh;
+   }
+
+   .banner--homepage .banner_contnet h2 {
+     margin-top: 1.25rem;
+   }
+
+ }
+
+
+
+ @media(max-width: 475px) {
+   .content-column .inner-column {
+     padding: 20px;
+   }
+
+   .hotels-inner-card.second .content-column .inner-column {
+     padding: 20px;
+   }
+
+   .banner_contnet {
+     margin-top: 1.5rem;
+   }
+
+   .banner_contnet h2 {
+     margin-bottom: 0;
+   }
+ }
+
+ @media(max-width:375px) {
+   .hotels-inner-card .second .sec-title a h4 {
+     font-size: 22px !important;
+     line-height: 30px !important;
+   }
+ }
