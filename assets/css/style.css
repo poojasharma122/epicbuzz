@@ -1189,3 +1189,44 @@ section.inner-bnr .hero-text h2 {
 }
 
 /* contact page css end */
+
+
+/* privacy policy css start */
+
+.interpretation-content ul li {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    padding-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.interpretation-content ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+
+.interpretation-content {
+    padding: 20px;
+}
+
+.interpretation-content h5 {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.interpretation-content p {
+    margin-bottom: 10px;
+}
+.interpretation-content p a {
+    color: #3e9172;
+}
+
+/* privacy policy css end */
