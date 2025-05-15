@@ -47,6 +47,7 @@ p {
     font-weight: 400;
     line-height: 150%;
     color: rgba(255, 255, 255, 0.5);
+    color: #fff;
     margin-bottom: 1rem;
 }
 
@@ -138,6 +139,7 @@ li {
     font-weight: 400;
     line-height: 1.25em;
     color: rgba(255, 255, 255, 0.5);
+    color: #fff;
     margin: 11px 0 0 0;
     list-style: none;
     display: inline-block;
@@ -441,6 +443,7 @@ li {
     background-repeat: no-repeat;
     width: 70px;
     height: 70px;
+    margin-bottom: 15px;
 }
 
 .why-choose-content {
@@ -476,8 +479,9 @@ li {
 
 .subscribe-wrapper p {
     font-size: 16px;
-    color: #555;
+    color: #fff;
     margin-bottom: 20px;
+    font-weight: 500;
 }
 
 .subscribe-form {
