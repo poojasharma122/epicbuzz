@@ -1349,3 +1349,25 @@ section.inner-bnr .hero-text h2 {
 }
 
 /* Editor Choice CSS End */
+
+
+.gallery_images{
+    height: 300px;
+    width: 100%;
+    border: 10px solid #fff;
+    border-radius: 15px;
+    overflow: hidden;
+
+}
+.gallery_images_inner {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+        transition: 0.3s all ease-in-out;
+}
+
+.gallery_images:hover  .gallery_images_inner{
+    transform: scale(1.2);
+}
