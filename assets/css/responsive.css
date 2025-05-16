@@ -113,16 +113,19 @@
      flex-direction: column;
      align-items: center;
    }
-.slide_content p {
-    font-size: 1.1rem;
-}
+
+   .slide_content p {
+     font-size: 1.1rem;
+   }
+
    .listing {
      width: 100%;
 
    }
-.slide_content h2 {
-    font-size: 2rem;
-}
+
+   .slide_content h2 {
+     font-size: 2rem;
+   }
  }
 
  @media (max-width: 767px) {
@@ -239,6 +242,30 @@
      width: 100%;
    }
 
+   .pt-80 {
+     padding-top: 40px;
+   }
+
+   .resort-content {
+     padding: 0 0 20px 0;
+   }
+
+   .pb-80 {
+     padding-bottom: 40px;
+   }
+
+   .py-5 {
+     padding-bottom: 0rem !important;
+   }
+
+   .why-choose-heading h2 {
+    line-height: 36px;
+}
+
+.banner_slides {
+    height: 400px;
+}
+
  }
 
 
@@ -260,11 +287,13 @@
    }
 
    .banner--homepage {
-     height: 65vh;
+     height: 80vh;
    }
-.slide_content h2 {
-    font-size: 2rem;
-}
+
+   .slide_content h2 {
+     font-size: 2rem;
+   }
+
    .slide_content p {
      font-size: 1rem;
    }
@@ -278,6 +307,10 @@
      padding: 10px;
      font-size: 13px;
    }
+
+   .resort-content {
+     padding: 0 0 20px 0;
+   }
  }
 
 
@@ -286,9 +319,11 @@
    .content-column .inner-column {
      padding: 20px;
    }
-.slide_content h2 {
-    font-size: 1.7rem;
-}
+
+   .slide_content h2 {
+     font-size: 1.7rem;
+   }
+
    .hotels-inner-card.second .content-column .inner-column {
      padding: 20px;
    }
@@ -300,10 +335,19 @@
    .banner_contnet h2 {
      margin-bottom: 0;
    }
+
    .banner_contnet h2 {
-    font-size: 1.5rem;
+     font-size: 1.5rem;
+   }
+
+   .banner_slides {
+    height: 300px;
 }
-   
+
+.resort-image {
+    height: 300px;
+}
+
  }
 
  @media(max-width:375px) {
