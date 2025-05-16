@@ -259,13 +259,16 @@
    }
 
    .why-choose-heading h2 {
-    line-height: 36px;
-}
+     line-height: 36px;
+   }
 
-.banner_slides {
-    height: 400px;
-}
+   .banner_slides {
+     height: 400px;
+   }
 
+   section.canada-winter.pt-80 {
+     padding-top: 0;
+   }
  }
 
 
@@ -311,6 +314,32 @@
    .resort-content {
      padding: 0 0 20px 0;
    }
+
+   .why-book-heading h2 {
+     font-size: 25px;
+     line-height: 30px;
+     font-weight: 600;
+   }
+
+   .hotels-content-heading h2 {
+     font-size: 25px;
+     font-weight: 600;
+     line-height: 30px;
+   }
+
+   .booking-tips-heading h2 {
+     font-size: 26px;
+     font-weight: 600;
+     line-height: 32px;
+   }
+
+   .sec-title a h4 {
+     line-height: 30px;
+   }
+
+   .inquiries-content {
+     padding: 20px 0 0 0;
+   }
  }
 
 
@@ -341,12 +370,12 @@
    }
 
    .banner_slides {
-    height: 300px;
-}
+     height: 300px;
+   }
 
-.resort-image {
-    height: 300px;
-}
+   .resort-image {
+     height: 300px;
+   }
 
  }
 
